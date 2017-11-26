@@ -22,7 +22,7 @@ public class Empleado extends Persona2{
 			super(nombre, edad, sexo, dni, casado);
 			idpersonal= "no definido";
 			sueldo=0;
-			categoría= "no definido";
+			categoria= "no definido";
 		}
 		
 		/*
@@ -53,7 +53,7 @@ public class Empleado extends Persona2{
 		public void setCategoria(String categoria){
 			this.categoria= categoria;
 		}
-		public void getCategoria(){
+		public String getCategoria(){
 			return categoria;
 		}
 		
@@ -78,7 +78,7 @@ public class Empleado extends Persona2{
 		  */
 		 @Override
 		public void pintar(){
-			 System.out.println(getNombre()+ " " + getEdad() + " " + getSexo() + " " + getDni() + " " + getCasado() + " " + idpersonal + " " + sueldo + " " + getCategoria);
+			 System.out.println(getNombre()+ " " + getEdad() + " " + getSexo() + " " + getDni() + " " + getCasado() + " " + idpersonal + " " + sueldo + " " + getCategoria());
 		 }
 
 
