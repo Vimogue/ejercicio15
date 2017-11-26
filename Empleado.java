@@ -2,14 +2,16 @@ public class Empleado extends Persona2{
 		
 		private String idpersonal;
 		private float sueldo;
+		private String categoria;
 		
 		public Empleado() {   //Constructor vacio.
 			super();
 			idpersonal= "no definido";
 			sueldo=0;
+			categoria= "no definido";
 		}
 		
-		public Empleado(String idpersonal, float sueldo) {//Constructor parámetros empleado.
+		public Empleado(String idpersonal, float sueldo, String categoria) {//Constructor parámetros empleado.
 			super();
 		}
 		
@@ -20,12 +22,13 @@ public class Empleado extends Persona2{
 			super(nombre, edad, sexo, dni, casado);
 			idpersonal= "no definido";
 			sueldo=0;
+			categoría= "no definido"
 		}
 		
 		/*
 		 * Cosnstructor todos los parámetros y datos.
 		 */
-		public Empleado (String nombre, byte edad, char sexo, String dni, boolean casado, String idpersonal, float sueldo){
+		public Empleado (String nombre, byte edad, char sexo, String dni, boolean casado, String idpersonal, float sueldo, String categoria){
 			super(nombre, edad, sexo, dni, casado);
 		}
 		
@@ -47,6 +50,12 @@ public class Empleado extends Persona2{
 		public float getSueldo(){
 			return sueldo;
 		}
+		public void setCategoria(String categoria){
+			this.categoria= categoria;
+		}
+		public void getCategoria(){
+			return categoria;
+		}
 		
 		/*
 		 * Sobreescribimos el método "toStrig" para que muestre todos los atributos Empleado y heredados de persona.
@@ -57,7 +66,7 @@ public class Empleado extends Persona2{
 		  */
 		 @Override
 		public String toString() {
-			return super.toString() + idpersonal + sueldo;
+			return super.toString() + idpersonal + sueldo + categoria;
 		}
 		 
 		 /*
@@ -69,7 +78,7 @@ public class Empleado extends Persona2{
 		  */
 		 @Override
 		public void pintar(){
-			 System.out.println(getNombre()+ " " + getEdad() + " " + getSexo() + " " + getDni() + " " + getCasado() + " " + idpersonal + " " + sueldo);
+			 System.out.println(getNombre()+ " " + getEdad() + " " + getSexo() + " " + getDni() + " " + getCasado() + " " + idpersonal + " " + sueldo + " " + getCategoria);
 		 }
 
 
