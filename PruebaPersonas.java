@@ -12,9 +12,9 @@ public class PruebaPersonas {
 		per2= new Persona2("Antonio", (byte)36,'h', "54365719-r", false);
 		
 		emp1= new Empleado();
-		emp2= new Empleado("Sec.3-num.18", (float)1346.27);
+		emp2= new Empleado("Sec.3-num.18", (float)1346.27, "Becario");
 		emp3= new Empleado("Ramón", (byte)19, 'h', "63922415-l", true);
-		emp4= new Empleado("Olga", (byte) 22, 'm', "02465379-z", false, "Sec.5-num.3", (float) 1346.27);
+		emp4= new Empleado("Olga", (byte) 22, 'm', "02465379-z", false, "Sec.5-num.3", (float) 1346.27, "Jefecillo");
 		usurpadordni= new Empleado ("Usurpador", (byte) 55, 'h', "54365719-r", false);
 		
 		System.out.println(per1.toString());
