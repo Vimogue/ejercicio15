@@ -22,7 +22,7 @@ public class Empleado extends Persona2{
 			super(nombre, edad, sexo, dni, casado);
 			idpersonal= "no definido";
 			sueldo=0;
-			categoría= "no definido"
+			categoría= "no definido";
 		}
 		
 		/*
