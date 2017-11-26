@@ -42,7 +42,12 @@ public class PruebaPersonas {
 		System.out.println(usurpadordni.equals(per2));
 		System.out.println(usurpadordni.equals(emp1));
 		
+
 		System.out.println("aqui está la otra modificación");	
+
+		System.out.println("esto es para probar la fusión de ramas del ejercicio de git");
+		
+
 	}
 	
 	
